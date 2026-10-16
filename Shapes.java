@@ -27,8 +27,8 @@ public class Shapes extends JPanel {
       //g.setColor(Color.blue);
       //g.fillRect(200, 200, 25, 25);
 
-      this.drawBullsEye(g);
-
+      //this.drawBullsEye(g);
+      //this.olympicRings(g);
    }
 
    public void drawBullsEye(Graphics g){
@@ -49,11 +49,24 @@ public class Shapes extends JPanel {
    }
 
    public void olympicRings(Graphics g){
+      g.setColor(Color.blue);
+      g.drawOval(75, 75, 50, 50);
+
+      g.setColor(Color.black);
+      g.drawOval(135, 75, 50, 50);
+
+      g.setColor(Color.red);
+      g.drawOval(195, 75, 50, 50);
+
+      g.setColor(Color.yellow);
+      g.drawOval(105, 105, 50, 50);
+
+      g.setColor(Color.green);
+      g.drawOval(165, 105, 50, 50);
 
    }
 
    public void trafficLight(Graphics g){
       g.setColor(Color.blue);
-      
    }
 }
