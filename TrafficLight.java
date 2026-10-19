@@ -45,13 +45,14 @@ public class TrafficLight extends JPanel implements MouseListener, MouseMotionLi
             }
 
             if (clickNum == 2){
-                g.setColor(Color.yellow);
-                g.fillOval(100, 350, 200, 200);
+                g.setColor(Color.green);
+                g.fillOval(100, 600, 200, 200);
             }
             
             if (clickNum == 3){
-                g.setColor(Color.green);
-                g.fillOval(100, 600, 200, 200);
+                g.setColor(Color.yellow);
+                g.fillOval(100, 350, 200, 200);
+                
                 clickNum = 0;
             }
 
@@ -75,7 +76,7 @@ public class TrafficLight extends JPanel implements MouseListener, MouseMotionLi
 	}
 
 		public void mouseMoved(MouseEvent Event){
-			//
+
 		}
 
 	public void mouseClicked (MouseEvent event) {
